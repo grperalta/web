@@ -2,15 +2,73 @@
 <html>
 <style>
 	.par {
+		font-family: "Times New Roman", Times, serif;
 		font-size: 20px;
 		margin: 2cm;
 	}
 </style>
 <style>
 	.par-right {
+		font-family: "Times New Roman", Times, serif;
 		font-size: 20px;
 		margin: 2cm;
 		text-align: right;
+	}
+</style>
+<style>
+	a:link, a:visited {
+		font-family: "Times New Roman", Times, serif;
+  		background-color: none;
+  		color: #800000;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+</style>
+<style>
+	body {
+  		background-color: #8D918D;
+	}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.dropbtn {
+		font-family: "Times New Roman", Times, serif;
+  		background-color: #8D918D;
+  		color: #800000;
+  		padding: 0px;
+  		font-size: 20px;
+  		border: none;
+  		cursor: pointer;
+	}
+	.dropbtn:hover, .dropbtn:focus {
+  		background-color: #8D918D;
+	}
+	.dropdown {
+  		position: relative;
+  		display: inline-block;
+	}
+	.dropdown-content {
+  		display: none;
+  		position: absolute;
+  		background-color: #8D918D;
+  		min-width: 1000px;
+  		overflow: auto;
+  		padding: 16px 16px;
+  		box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+  		z-index: 1;
+	}
+	.dropdown-content a {
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+	}
+	.dropdown a:hover {
+		background-color: #ddd;
+	}
+	.show {
+		display: block;
 	}
 </style>
 <body>
@@ -35,110 +93,290 @@
 <p class="par">
 	<b> Publications </b>
 	<br> <br>
-	<b> [22] </b> G. Peralta, <i> Optimal Borel measure controls for the two-dimensional stationary Boussinesq system</i>. Accepted in ESAIM Control, Optimisation and Calculus of Variations.
-	&#x2000 <a href="https://drive.google.com/file/d/1zokr3qiQ6A34ju5hOCQY2lpTw1f17P1f/view?usp=sharing"> preprint</a>
+	<b> [22] </b> G. Peralta, <i> Weak and very weak solutions to the viscous Cahn–Hilliard–Oberbeck–Boussinesq phase-field system on two-dimensional bounded domains</i>, Journal of Evolution Equations, 71 pp., 2022.
+	<br>
+	<span class="dropdown">
+ 	<button onclick=myFunction(22) class="dropbtn"> abstract </button>
+  	<span id="22" class="dropdown-content">
+    In this paper, we consider weak and very weak solutions to the viscous Cahn–Hilliard–Oberbeck–Boussinesq system for non-isothermal, viscous and incompressible binary fluid flows in two-dimensional bounded domains. The source functions have low spatial regularities, and the initial data belong to some interpolation spaces. The essential tools employed in the analysis are the extended maximal parabolic regularity for the associated linearized system and the well-posedness of the nonlinear part with the solution of the linearized dynamics as the frozen coefficients. We resolve the linear system by decomposition into the viscous biharmonic heat, Stokes, and heat equations. A spectral Faedo–Galerkin framework shall be pursued for the nonlinear part. Higher integrability with respect to time will be established using interpolation and compactness methods.
+  	</span>
+	</span>
+	<br> <br>
+	<b> [21] </b> G. Peralta, <i> Optimal Borel measure controls for the two-dimensional stationary Boussinesq system</i>. ESAIM Control, Optimisation and Calculus of Variations, 32 pp., 2022.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(21) class="dropbtn"> abstract </button>
+  	<span id="21" class="dropdown-content">
+    We analyze an optimal control problem for the stationary two-dimensional Boussinesq system with controls taken in the space of regular Borel measures. Such measure-valued controls are known to produce sparse solutions. First-order and second-order necessary and sufficient optimality conditions are established. Following an optimize-then-discretize strategy, the corresponding finite element approximation will be solved by a semi-smooth Newton method initialized by a continuation strategy. The controls are discretized by finite linear combinations of Dirac measures concentrated at the nodes associated with the degrees of freedom for the mini-finite element.  	
+    </span>
+	</span>
 	&#x2000 <a href="https://github.com/grperalta/boussinesqmeasure"> python</a>
 	<br> <br>
-	<b> [21] </b> G. Peralta, <i> Weak and very weak solutions to the viscous Cahn-Hilliard-Oberbeck-Boussinesq phase-field system on two-dimensional bounded domains</i>. Accepted in Journal of Evolution Equations. 
-	&#x2000 <a href="https://drive.google.com/file/d/1Nzjgd2tw76uPyU2N0YBlS5GLMM346TZA/view?usp=sharing"> preprint</a>
-	<br> <br>
-	<b> [20] </b> G. Peralta and K. Kunisch, <i> Mixed and hybrid Petrov-Galerkin finite element discretization for optimal control of the wave equation</i>, Numerische Mathematik, 2022. 
+	<b> [20] </b> G. Peralta and K. Kunisch, <i> Mixed and hybrid Petrov–Galerkin finite element discretization for optimal control of the wave equation</i>, Numerische Mathematik, 37 pp., 2022. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(20) class="dropbtn"> abstract </button>
+  	<span id="20" class="dropdown-content">
+    A mixed finite element discretization of an optimal control problem for the linear wave equation with homogeneous Dirichlet boundary condition is considered. For the temporal discretization, a Petrov–Galerkin scheme is utilized and the Raviart–Thomas finite elements for spatial discretization is used. A priori error analysis is proved for this numerical scheme. A hybridized formulation is proposed and if the Arnold–Brezzi post-processing method is applied, better convergence rates with respect to space are observed. The interchangeability of discretization and optimization holds both for mixed and hybrid formulations. Numerical experiments illustrating the theoretical results are presented using the lowest-order Raviart–Thomas elements.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1_oDqP3ieKja9UYeQPm5IEx7iBHZbSIow/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/article/10.1007/s00211-021-01258-9"> link</a>
 	&#x2000 <a href="https://github.com/grperalta/pgrtwave"> python</a>
 	<br> <br>
-	<b> [19] </b> G.M. Angeles and G. Peralta, <i> Energy method for exponential stability of coupled one-dimensional hyperbolic PDE-ODE systems</i>, Evolution Equations and Control Theory 11, No. 1, pp. 199-224, 2022. 
+	<b> [19] </b> G.M. Angeles and G. Peralta, <i> Energy method for exponential stability of coupled one-dimensional hyperbolic PDE-ODE systems</i>, Evolution Equations and Control Theory 11 (1), pp. 199-224, 2022. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(19) class="dropbtn"> abstract </button>
+  	<span id="19" class="dropdown-content">
+	We consider a hyperbolic system of partial differential equations on a bounded interval coupled with ordinary differential equations on both ends. The evolution is governed by linear balance laws, which we treat with semigroup and time-space methods. Our goal is to establish the exponential stability in the natural state space by utilizing the stability with respect to the first-order energy of the system. Derivation of a priori estimates plays a crucial role in obtaining energy and dissipation functionals. The theory is then applied to specific physical models.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1thBjvIIEEl_cb9VaQIhov3uI_-KOaPe9/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://www.aimsciences.org/article/doi/10.3934/eect.2020108"> link</a>
 	<br> <br>
-	<b> [18] </b> G. Peralta and J. S. Simon, <i> Optimal control for the Navier-Stokes with time delay in the convection: analysis and finite element approximations</i>, Journal of Mathematical Fluid Mechanics, 23, No. 56, pp. 1-49, 2021. 
+	<b> [18] </b> G. Peralta and J. S. Simon, <i> Optimal control for the Navier–Stokes with time delay in the convection: analysis and finite element approximations</i>, Journal of Mathematical Fluid Mechanics 23, 56, pp. 1-49, 2021. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(18) class="dropbtn"> abstract </button>
+  	<span id="18" class="dropdown-content">
+	A distributed optimal control problem for the 2D incompressible Navier–Stokes equation with delay in the convection term is studied. The delay corresponds to the non-instantaneous effect of the motion of a fluid parcel on the mass transfer, and can be realized as a regularization or stabilization to the Navier–Stokes equation. The existence of optimal controls is established, and the corresponding first-order necessary optimality system is determined. A semi-implicit discontinuous Galerkin scheme with respect to time and conforming finite elements for space is considered. Error analysis for this numerical scheme is discussed and optimal convergence rates are proved. The fully discrete problem is solved by the Barzilai–Borwein gradient method. Numerical examples for the velocity-tracking and vorticity minimization problems based on the Taylor-Hood elements are presented.
+	</span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1mkNvJlNmi1jQFB0WxS-QQvuK1oZyZGkI/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/article/10.1007/s00021-021-00577-z"> link</a>
 	&#x2000 <a href="https://github.com/grperalta/nsedelay"> python<a/>
 	<br> <br>
-	<b> [17] </b> G. Peralta, <i> Distributed optimal control of the 2D Cahn-Hilliard-Oberbeck-Boussinesq system for nonisothermal viscous two-phase flows</i>, Applied Mathematics and Optimization 84, pp. 1219-1279, 2021.    
+	<b> [17] </b> G. Peralta, <i> Distributed optimal control of the 2D Cahn–Hilliard–Oberbeck–Boussinesq system for nonisothermal viscous two-phase flows</i>, Applied Mathematics and Optimization 84, pp. 1219-1279, 2021.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(17) class="dropbtn"> abstract </button>
+  	<span id="17" class="dropdown-content">
+	We analyze a distributed optimal control problem where the state equation is governed by the coupling of the two-dimensional Cahn–Hilliard and Oberbeck–Boussinesq systems modelling incompressible viscous two-phase flows with convective heat transfer. Pointwise constraints are imposed on the controls that act as external sources in the fluid and convection-diffusion equations. The objective functional is of tracking-type that consists of a weighted energy of the difference between the state and a desired target. We establish the existence of optimal controls, the differentiability of the control-to-state operator, and the necessary and sufficient optimality conditions. For initial and target data with finite energy norms, limited space–time regularity of the adjoint states arises due to convection and surface tension.
+	</span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1xUwkhsC2KRaeMAjbrB6aOv-UICs66Ouq/view"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/article/10.1007/s00245-021-09759-7"> link</a>
 	<br> <br>
-	<b> [16] </b> G. Peralta and K. Kunisch, <i> Analysis and finite element discretization for optimal control of a linear fluid-structure interaction problem with delay</i>, IMA Journal of Numerical Analysis, Vol. 40, pp. 140-206, 2020.  
+	<b> [16] </b> G. Peralta and K. Kunisch, <i> Analysis and finite element discretization for optimal control of a linear fluid-structure interaction problem with delay</i>, IMA Journal of Numerical Analysis 40, pp. 140-206, 2020.  
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(16) class="dropbtn"> abstract </button>
+  	<span id="16" class="dropdown-content">
+	A fluid-structure interaction model with discrete and distributed delays in the structural damping is studied. The fluid and structure dynamics are governed by the Navier–Stokes and linear elasticity equations, respectively. Due to the presence of delay, a crucial ingredient of the weak formulation is the use of hidden boundary regularity for transport equations. In two space dimension, it is shown that weak solutions are unique. For smooth and compatible data, we establish the existence of the pressure and by applying micro-local analysis, further regularity of the solutions are available. Finally, the exponential stability of the system is obtained through an appropriate Lyapunov functional.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1Vm5_fYFMyENXjxTynrzH-Qihab9AnaHK/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://academic.oup.com/imajna/article-abstract/40/1/140/5177807?redirectedFrom=fulltext"> link</a>
 	&#x2000 <a href="https://github.com/grperalta/fsidelay"> python</a>
 	<br> <br>
-	<b> [15] </b> G. Peralta, <i> Uniform exponential stability of a fluid-plate interaction model due to thermal effects</i>, Evolution Equations and Control Theory, Vol. 9, No. 1, pp. 39-60, 2020. 
+	<b> [15] </b> G. Peralta, <i> Uniform exponential stability of a fluid-plate interaction model due to thermal effects</i>, Evolution Equations and Control Theory 9 (1), pp. 39-60, 2020. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(15) class="dropbtn"> abstract </button>
+  	<span id="15" class="dropdown-content">
+	We consider a coupled fluid-thermoelastic plate interaction model. The fluid velocity is modeled by the linearized 3D Navier-Stokes equation while the plate dynamics is described by a thermoelastic Kirchoff system. By eliminating the pressure term, the system is reformulated as an abstract evolution problem and its well-posedness is proved by semigroup methods. The dissipation in the system is due to the diffusion of the fluid and heat components. Uniform stability of the coupled system is established through multipliers and the energy method. The multipliers used for thermoelastic plate models in the literature are modified in accordance to the applicability of a certain Stokes map
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1z2cPZ1Czyg6T3iS_9VVHEBYrNu4TCNme/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="http://www.aimsciences.org/article/doi/10.3934/eect.2020016"> link</a>
 	<br> <br>
-	<b> [14] </b> G. Peralta and K. Kunisch, <i> Analysis of a nonlinear fluid-structure interaction model with mechanical dissipation and delay</i>, Nonlinearity Vol. 32, pp. 5110-5149, 2019.
+	<b> [14] </b> G. Peralta and K. Kunisch, <i> Analysis of a nonlinear fluid-structure interaction model with mechanical dissipation and delay</i>, Nonlinearity 32, pp. 5110-5149, 2019.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(14) class="dropbtn"> abstract </button>
+  	<span id="14" class="dropdown-content">
+	An optimal control problem for a linearized fluid–structure interaction model with a delay term in the structural damping is analyzed. A distributed control acting on the fluid domain, structure domain or both is considered. The necessary optimality conditions are derived both for rough and smooth initial data. A parabolic regularization of the problem and its convergence are investigated. Finite element discretization for the regularized problem and error estimates are provided. Piecewise linear elements with bubble functions for the fluid and a discontinuous Galerkin scheme for the spatial and temporal discretizations are utilized respectively. Numerical experiments illustrating the theoretical results are given.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1T_SVqRSouEdbKj1tvnVAwKKsM__jVjoD/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://iopscience.iop.org/article/10.1088/1361-6544/ab46f5"> link</a>
 	<br> <br>
-	<b> [13] </b> G. Peralta and K. Kunisch, <i> Interface stabilization of a parabolic-hyperbolic PDE system with delay in the interaction</i>, Discrete and Continuous Dynamical Systems - A, Vol. 38, No. 6, pp. 3055-3083, 2018. 
+	<b> [13] </b> G. Peralta and K. Kunisch, <i> Interface stabilization of a parabolic-hyperbolic PDE system with delay in the interaction</i>, Discrete and Continuous Dynamical Systems - A 38 (6), pp. 3055-3083, 2018. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(13) class="dropbtn"> abstract </button>
+  	<span id="13" class="dropdown-content">
+	A coupled parabolic-hyperbolic system of partial differential equations modeling the interaction of a structure submerged in a fluid is studied. The system being considered incorporates delays in the interaction on the interface between the fluid and the solid. We study the stability properties of the interaction model under suitable assumptions between the competing strengths of the delays and the feedback controls.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1XEUVaOlebYSlY51fD51npnCCCb1-_RZB/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="http://www.aimsciences.org/article/doi/10.3934/dcds.2018133"> link</a>
 	<br> <br>
-	<b> [12] </b> G. Peralta, <i> Stabilization of the wave equation with acoustic and delay boundary conditions</i>, Semigroup Forum, Vol. 96, No. 2, pp. 357-376, 2018.
+	<b> [12] </b> G. Peralta, <i> Stabilization of the wave equation with acoustic and delay boundary conditions</i>, Semigroup Forum 96 (2), pp. 357-376, 2018.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(12) class="dropbtn"> abstract </button>
+  	<span id="12" class="dropdown-content">
+	In this paper, we consider the wave equation on a bounded domain with mixed Dirichlet-impedance type boundary conditions coupled with oscillators on the Neumann boundary. The system has either a delay in the pressure term of the wave component or the velocity of the oscillator component. Using the velocity as a bound- ary feedback it is shown that if the delay factor is less than that of the damping factor then the energy of the solutions decays to zero exponentially. The results are based on the energy method, a compactness-uniqueness argument and an appropriate weighted trace estimate. In the critical case where the damping and delay factors are equal, it is shown using variational methods that the energy decays to zero asymptotically.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1J20xi3Y0qU42px4qz5OVrq06n3gSFBme/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/article/10.1007/s00233-018-9930-9"> link</a>
 	<br> <br>
-	<b> [11] </b> G. Peralta, <i> A fluid-structure interaction model with interior damping and delay in the structure</i>, Zeitschrift fuer Angewandte Mathematik und Physik, Vol. 67, No. 10, pp. 1-20, 2016.
+	<b> [11] </b> G. Peralta, <i> A fluid-structure interaction model with interior damping and delay in the structure</i>, Zeitschrift fuer Angewandte Mathematik und Physik 67, 10, pp. 1-20, 2016.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(11) class="dropbtn"> abstract </button>
+  	<span id="11" class="dropdown-content">
+	A coupled system of partial differential equations modeling the interaction of a fluid and a structure with delay in the feedback is studied. The model describes the dynamics of an elastic body immersed in a fluid that is contained in a vessel, whose boundary is made of a solid wall. The fluid component is modeled by the linearized Navier-Stokes equation, while the solid component is given by the wave equation neglecting transverse elastic force. Spectral properties and exponential or strong stability of the interaction model under appropriate conditions on the damping factor, delay factor and the delay parameter are established using a generalized Lax-Milgram method.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1Kx2nZR_jM1zHievHMFWT_wowSWjcM7s8/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/article/10.1007/s00033-015-0611-1"> link</a>
 	<br> <br>
-	<b> [10] </b> G. Peralta, <i> Stabilization of viscoelastic wave equations with distributed or boundary delay</i>, Zeitschrift fuer Analysis und Ihre Anwendungen, Vol. 35, No. 3, pp. 359-381, 2016.
+	<b> [10] </b> G. Peralta, <i> Stabilization of viscoelastic wave equations with distributed or boundary delay</i>, Zeitschrift fuer Analysis und Ihre Anwendungen 35 (3), pp. 359-381, 2016.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction(10) class="dropbtn"> abstract </button>
+  	<span id="10" class="dropdown-content">
+	The wave equation with viscoelastic boundary damping and internal or boundary delay is considered. The memory kernel is assumed to be integrable and completely monotonic. Under certain conditions on the damping factor, delay factor and the memory kernel it is shown that the energy of the solutions decay to zero either asymptotically or exponentially. In the case of internal delay, the result is obtained through spectral analysis and the Gearhart-Prüss Theorem, whereas in the case of boundary delay, it is obtained using the energy method.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1H0zCAsGBrYaL9UVmjB_o6FpllNIxN2HG/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://www.ems-ph.org/journals/show_abstract.php?issn=0232-2064&vol=35&iss=3&rank=6"> link</a>
 	<br> <br>
-	<b> [09] </b> G. Peralta and G. Propst, <i> Existence of local-in-time classical solutions of a model of flow in a bounded elastic tube</i>, Mathematical Methods in the Applied Sciences, Vol. 39, No. 18, pp. 5315-5329, 2016.    
+	<b> [09] </b> G. Peralta and G. Propst, <i> Existence of local-in-time classical solutions of a model of flow in a bounded elastic tube</i>, Mathematical Methods in the Applied Sciences 39 (18), pp. 5315-5329, 2016.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("9") class="dropbtn"> abstract </button>
+  	<span id="9" class="dropdown-content">
+	This paper studies the local-in-time existence of classical solutions to a hyperbolic system with differential boundary conditions modelling a flow in an elastic tube. The well-known Lax transformations used for obtaining a priori estimates for conservation laws are difficult to apply here because of the inhomogeneity of the partial differential equations (PDE). Rather, our method relies on a suitable splitting of the original system into the PDE part and the ODE part, the characteristics for the PDE part, appropriate modulus of continuity estimates and a compactness argument.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1kGnZxmV_RMkGlO9J-oCf7jsXFvna1oT-/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://onlinelibrary.wiley.com/doi/10.1002/mma.3917"> link</a>
 	<br> <br>
-	<b> [08] </b> G. Peralta and G. Propst, <i> Nonlinear and linear hyperbolic systems with dynamic boundary conditions</i>, Bulletin of the Brazilian Mathematical Society, New Series, Vol. 47, No. 2, pp. 671-683, 2016.    
+	<b> [08] </b> G. Peralta and G. Propst, <i> Nonlinear and linear hyperbolic systems with dynamic boundary conditions</i>, Bulletin of the Brazilian Mathematical Society, New Series 47 (2), pp. 671-683, 2016.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("8") class="dropbtn"> abstract </button>
+  	<span id="8" class="dropdown-content">
+	We consider first order hyperbolic systems on an interval with dynamic boundary conditions. The well-posedness for linear systems is established by using a variational method. The linear theory is used to analyze the local-in-time well-posedness for nonlinear systems. The results are applied to a model describing the flow of an incompressible fluid inside an elastic tube whose ends are attached to tanks. Global existence and stability for data that are smooth enough and close to the steady state are obtained by using energy and entropy methods.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1nVIlYdObaOldTIu2t5CetfZAiFV8yWV5/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/article/10.1007/s00574-016-0177-3"> link</a>
 	<br> <br>
-	<b> [07] </b> G. Peralta and G. Propst, <i> Well-posedness and regularity of linear hyperbolic systems with dynamic boundary conditions</i>, Proceedings of the Royal Society of Edinburgh Section A: Mathematics, Vol. 146, No. 5, pp. 1047-1080, 2016.    
+	<b> [07] </b> G. Peralta and G. Propst, <i> Well-posedness and regularity of linear hyperbolic systems with dynamic boundary conditions</i>, Proceedings of the Royal Society of Edinburgh Section A: Mathematics 146 (5), pp. 1047-1080, 2016.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("7") class="dropbtn"> abstract </button>
+  	<span id="7" class="dropdown-content">
+	We consider first-order hyperbolic systems on an interval with dynamic boundary conditions. These systems occur when the ordinary differential equation dynamics on the boundary interact with the waves in the interior. The well-posedness for linear systems is established using an abstract Friedrichs theorem. Due to the limited regularity of the coefficients, we need to introduce the appropriate space of test functions for the weak formulation. It is shown that the weak solutions exhibit a hidden regularity at the boundary as well as at interior points. As a consequence, the dynamics of the boundary components satisfy an additional regularity. Neither result can be achieved from standard semigroup methods. Nevertheless, we show that our weak solutions and the semigroup solutions coincide. For illustration, we give three particular physical examples that fit into our framework.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1SLOHmrpy4DDkg-5hX_Fx5OZz-hZJA-lO/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://www.cambridge.org/core/journals/proceedings-of-the-royal-society-of-edinburgh-section-a-mathematics/article/abs/wellposedness-and-regularity-of-linear-hyperbolic-systems-with-dynamic-boundary-conditions/0031D875B9DE84AB19F23E5557A56550"> link</a>
 	<br> <br>
-	<b> [06] </b> G. Peralta and G. Propst, <i> Global smooth solution to a hyperbolic system on an interval with dynamic boundary conditions</i>, Quarterly of Applied Mathematics, Vol. 74, No. 3, pp. 539-570, 2016.    
+	<b> [06] </b> G. Peralta and G. Propst, <i> Global smooth solution to a hyperbolic system on an interval with dynamic boundary conditions</i>, Quarterly of Applied Mathematics 74 (3), pp. 539-570, 2016.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("6") class="dropbtn"> abstract </button>
+  	<span id="6" class="dropdown-content">
+	We consider a hyperbolic two component system of partial differential equations in one space dimension with ODE boundary conditions describing the flow of an incompressible fluid in an elastic tube that is connected to a tank at each end. Using the local-existence theory together with entropy methods, the existence and uniqueness of a global-in-time smooth solution is established for smooth initial data sufficiently close to the equilibrium state. Energy estimates are derived using the relative entropy method for zero order estimates while constructing entropy-entropy flux pairs for the corresponding diagonal system of the shifted Riemann invariants to deal with higher order estimates. Finally, using the linear theory and interpolation estimates, we show that the solution converges exponentially to the equilibrium state.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1J65ItKEnk8ukWANFA4BnmQZpQp_3lVtm/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://www.ams.org/journals/qam/2016-74-03/S0033-569X-2016-01432-2/"> link</a>
 	<br> <br>
-	<b> [05] </b> G. Peralta and G. Propst, <i> Stability and boundary controllability of a linearized model of flow in an elastic tube</i>, ESAIM Control, Optimisation and Calculus of Variations, Vol. 21, No. 2, pp. 583-601, 2015.    
+	<b> [05] </b> G. Peralta and G. Propst, <i> Stability and boundary controllability of a linearized model of flow in an elastic tube</i>, ESAIM Control, Optimisation and Calculus of Variations 21 (2), pp. 583-601, 2015.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("5") class="dropbtn"> abstract </button>
+  	<span id="5" class="dropdown-content">
+	We consider a model describing the flow of a fluid inside an elastic tube that is connected to two tanks. We study the linearized system through semigroup theory. Controlling the pressures in the tanks renders a hyperbolic PDE with boundary control. The linearization induces a one-dimensional linear manifold of equilibria; when those are factored out, the corresponding semigroup is exponentially stable. The location of the eigenvalues in dependence on the viscosity is discussed. Exact boundary controllability of the system is achieved by the Riesz basis approach including generalized eigenvectors. A minimal time for controllability is given. The corresponding result for internal distributed control is stated.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1tj9tzJYu5ZFLmH6-qU-IkkW_Me6KZkO4/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://www.esaim-cocv.org/articles/cocv/abs/2015/02/cocv140039/cocv140039.html"> link</a>
 	<br> <br>
-	<b> [04] </b> G. Peralta and G. Propst, <i> Local well-posedness of a class of hyperbolic PDE-ODE systems on a bounded interval</i>, Journal of Hyperbolic Differential Equations, Vol. 11, No. 4, pp. 705-747, 2014. 
+	<b> [04] </b> G. Peralta and G. Propst, <i> Local well-posedness of a class of hyperbolic PDE-ODE systems on a bounded interval</i>, Journal of Hyperbolic Differential Equations 11 (4), pp. 705-747, 2014. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("4") class="dropbtn"> abstract </button>
+  	<span id="4" class="dropdown-content">
+	The well-posedness theory for hyperbolic systems of first-order quasilinear PDE's with ODE's boundary conditions (on a bounded interval) is discussed. Such systems occur in multi-scale blood flow models, as well as valveless pumping and fluid mechanics. The theory is presented in the setting of Sobolev spaces Hm (m ≥ 3 being an integer), which is an appropriate set-up when it comes to proving existence of smooth solutions using energy estimates. A blow-up criterion is also derived, stating that if the maximal time of existence is finite, then the state leaves every compact subset of the hyperbolicity region, or its first-order derivatives blow-up. Finally, we discuss physical examples which fit in the general framework presented.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1qVpxScmb670WRU5kuy1qJz0jop2mcnw_/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://www.worldscientific.com/doi/abs/10.1142/S0219891614500222"> link</a>
 	<br> <br>
-	<b> [03] </b> G. Peralta, <i> Convergence, isometry and quasiconvexity in the modular sequence space w_0^0(Φ)</i>, Southeast Asian Bulletin of Mathematics, Vol. 35, No. 5, 2011, pp. 813-824, 2011.    
+	<b> [03] </b> G. Peralta, <i> Convergence, isometry and quasiconvexity in the modular sequence space w_0^0(Φ)</i>, Southeast Asian Bulletin of Mathematics 35 (5), 2011, pp. 813-824, 2011.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("3") class="dropbtn"> abstract </button>
+  	<span id="3" class="dropdown-content">
+	We consider a modular sequence space generated by a sequence of Orlicz functions. Sufficient conditions were imposed in this sequence to guarantee that the modular of the space generates a Luxemburg norm. The (Δ2,𝛿2) condition was used to prove the equivalence of modular convergence and Luxemburg norm convergence. Using a linear operator with certain properties, we will generate another modular sequence space and establish an isometry between this space and the previous one. Also, the quasiconvexity of the modular will be studied.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/16MbgsP2_9K_WrZROMO8Gxn41AHVQQJvO/view?usp=sharing"> pdf</a>
 	<br> <br>
-	<b> [02] </b> G. Peralta, <i> On existence of solutions of a class of Volterra integral equations</i>, Chamchuri Journal of Mathematics, Vol. 1, No. 2, pp. 43-53, 2009.    
+	<b> [02] </b> G. Peralta, <i> On existence of solutions of a class of Volterra integral equations</i>, Chamchuri Journal of Mathematics 1 (2), pp. 43-53, 2009.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("2") class="dropbtn"> abstract </button>
+  	<span id="2" class="dropdown-content">
+	In this paper, we discuss sufficient conditions to guarantee the existence and uniqueness of a class of Volterra integral equations of the second kind. Our results are based on the resolvent and contraction mapping methods. Some classical existence and uniqueness theorems are given as corollaries.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1KwIdacxcI4cYavwlg85eLjGPDg2Ji3oI/view?usp=sharing"> pdf</a>
 	<br> <br>
 	<b> [01] </b> D.J. Indong and G. Peralta, <i> Inversions of permutations in symmetric, alternating, and dihedral groups</i>, Journal of Integer Sequences Vol. 11, Article 08.4.3, 2008.    
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("1") class="dropbtn"> abstract </button>
+  	<span id="1" class="dropdown-content">
+	We use two methods to obtain a formula relating the total number of inversions of all permutations and the corresponding order of symmetric, alternating, and dihedral groups. First, we define an equivalence relation on the symmetric group Sn and consider each element in each equivalence class as a permutation of a proper subset of {1,2,...,n}. Second, we look at certain properties of a backward permutation, a permutation obtained by reversing the row images of a given permutation. Lastly, we employ the first method to obtain a recursive formula corresponding to the number of permutations with k inversions.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1AApU_z-M1dv30h9GqaG9b7WhkD1OP6fw/view?usp=sharing"> pdf</a>
 	</p>
 <p class="par">
 	<b> Conference Proceedings </b>
 	<br> <br>
-	<b> [2] </b> G. Peralta, <i> Feedback stabilization of a linear fluid-membrane system with time-delay</i>. In Theory, Numerics and Applications of Hyperbolic Problems II, Aachen, Germany, August 2016, C. Klingenberg and M. Westdickenberg (eds.), Springer Proceedings in Mathematics and Statistics 237, pp. 437-449, 2018.
+	<b> [2] </b> G. Peralta, <i> Feedback stabilization of a linear fluid–membrane system with time-delay</i>. In Theory, Numerics and Applications of Hyperbolic Problems II, Aachen, Germany, August 2016, C. Klingenberg and M. Westdickenberg (eds.), Springer Proceedings in Mathematics and Statistics 237, pp. 437-449, 2018.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("confproc2") class="dropbtn"> abstract </button>
+  	<span id="confproc2" class="dropdown-content">
+	A coupled parabolic–hyperbolic system of partial differential equations modelling the interaction of a fluid and a membrane is considered. The model is reformulated as an abstract Cauchy problem and thereby constructing a semigroup for the evolution. This is done by eliminating the pressure. The system is stabilized through a feedback force applied to the membrane incorporating a time delay. The spectral properties and stability are considered under suitable conditions on the fluid viscosity, damping coefficient and delay coefficient.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1OzCkx0hzm5RoAiDz7yU9Mv4YZqU-VJ-p/view?usp=sharing"> pdf</a>
 	&#x2000 <a href="https://link.springer.com/chapter/10.1007/978-3-319-91548-7_33"> link</a>
 	<br> <br>
 	<b> [1] </b> D.J. Indong and G. Peralta, <i> Some properties of a sequence of inversion numbers</i>. In L. S. Keong and H. K. Haili (eds) 5th Asian Mathematical Conference Proceedings, Volume I, June 2009, pp. 22-28. ISBN: 978-967-5417-53-5. 
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("confproc1") class="dropbtn"> abstract </button>
+  	<span id="confproc1" class="dropdown-content">
+	In this paper, we consider a certain sequence of inversion numbers. We show that this sequence is a polynomial sequence and find its leading term. Using this, a characterization of the Hankel and inverse binomial transforms of these inversion numbers will be given and each of these transforms, together with an appropriate sequence, forms a basis for the space of real sequences having compact support. Also, with the aid of the generating function of the inversion numbers we will give a formula for a certain type of complex integral.
+    </span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1vDN-nL-MjO8IJEQ2hROcw5AogiUe_wes/view?usp=sharing"> pdf</a>
 	</p>
 <p class="par">
 	<b> Theses </b>
 	<br> <br>
-	 <i> Hyperbolic Systems on an Interval with Dynamic Boundary Conditions</i>, Dr.rer.nat. Dissertation, University of Graz, 2014.
+	<i> Hyperbolic Systems on an Interval with Dynamic Boundary Conditions</i>, Dr.rer.nat. Dissertation, University of Graz, 2014.
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("phdthesis") class="dropbtn"> abstract </button>
+  	<span id="phdthesis" class="dropdown-content">
+	In this thesis, the well-posedness of hyperbolic systems with dynamic boundary conditions is studied. Such systems occur naturally when the dynamics on the boundary interact with the waves in the interior. By using a priori estimates and the metho of Friedrichs, the L2-well-posedness of linear systems is established. It is shown tha weak solutions have a hidden regularity property, namely the L2-trace regularity at the boundary. The a priori estimates are derived through symmetrizers and paradifferential calculus. Regularity and compatibility of the data enhances the regularity of the solutions. We also deal with a model describing the flow of fluid in an elasti tube whose ends are attached to tanks. The stability and boundary controllability o the linearized model are analyzed using semigroup theory and nonharmonic Fourie analysis. Numerical solutions of the linear model are computed using Legendre tau approximations. Next, local in time well-posedness of a class of PDE-ODE systems is established by Picard iteration. Furthermore, the existence and uniqueness of global in time smooth solutions of the two-tank model is proved for smooth data sufficiently close to the equilibrium. The proof is based on energy estimates. It is shown that solutions of the nonlinear model converge exponentially fast to the steady state. The lower order energy estimate is derived using the relative entropy, while the higher order estimates are obtained using appropriate entropy-entropy flux pairs.
+	</span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1OePapB3mAyWEepipCzmxlqU0E2bhMRLZ/view?usp=sharing"> pdf</a>
 	<br> <br>
 	<i> Boundary Feedback Stabilization of the Euler-Bernoulli Beam with Global or Local Kelvin-Voigt and Viscous Damping</i>, MS Thesis, University of the Philippines Baguio, 2009.   
+	<br> 
+	<span class="dropdown">
+ 	<button onclick=myFunction("msthesis") class="dropbtn"> abstract </button>
+  	<span id="msthesis" class="dropdown-content">
+	We analyze a boundary feedback system of a class of non-homogeneous cantilever Euler-Bernoulli beam with Kelvin-Voigt and viscous damping. We consider global damping where the bending moment is controlled by the linear feedback of angular velocity and the shear force is controlled by the linear feedback of velocity. The exponential stability of the system will be established and in the process we also show that the non-real spectrum of the infinitesimal generator lies in its point spectrum. Furthermore, the exponential decay of the energy of the system and the analyticity are analyzed. Moreover, an upper bound for the type of the generator shall be given. We also consider the beam with local damping, and for this case, the bending moment is controlled by the linear feedback of rotation angle and angular velocity while the shear force is controlled by the linear feedback of displacement and velocity. The exponential stability of the locally damped beam will be established. We use the operator semigroup technique, the multiplier technique, and the contradiction argument on the frequency domain method to establish the exponential stability of the semigroup associated with the beam equations. Representation theorems for sesquilinear forms were used to describe the spectrum of the generator of the semigroup.
+	</span>
+	</span>
 	&#x2000 <a href="https://drive.google.com/file/d/1E7Uw2l52EeTvhsdPMGSOcH-Vte0OmW8E/view?usp=sharing"> pdf</a>
 	</p>
 <p class="par">
@@ -146,5 +384,22 @@
 	<br> <br>
 	<b> [1] </b> G. Peralta, Error estimates for mixed and hybrid FEM for elliptic optimal controls with penalizations.
 	</p>	
+<script>
+	function myFunction(idName) {
+  		document.getElementById(idName).classList.toggle("show");
+	}
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        			openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}
+</script>
 </body>
 </html>
